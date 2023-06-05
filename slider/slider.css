@@ -1,0 +1,122 @@
+.wrapper{
+margin-top:50px;
+overflow: hidden;
+transition: all 0.5s ease;
+position:relative;
+}
+
+
+.wrapper .carousel{
+width:100%;
+cursor: pointer;
+white-space: nowrap;
+scroll-behavior: smooth;
+}
+
+.carousel img{
+height: 500px;
+border-radius: 10px;
+object-fit: cover;
+user-select: none;
+margin-left: 14px;
+width: calc(100% / 3);
+}
+
+.carousel img:hover{
+opacity: 0.4;
+}
+
+.carousel img{
+position: relative;
+}
+
+/* .text{
+position: absolute;
+font-size: 4rem;
+font-family: "threat";
+display: flex;
+align-items: center;
+justify-content: center;
+} */
+
+
+
+
+@media screen and (max-width: 900px) {
+.carousel img{
+  width: calc(100% / 2);
+}
+}
+
+@media screen and (max-width: 550px) {
+.carousel img{
+  width: 100%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.js-navigation {
+/*position: relative;*/
+width: 95%;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.swipe-right,
+.swipe-left {
+position: absolute;
+left: 0;
+top: 50%;
+transform: translateY(-50%);
+width: 50px;
+height: 50px;
+border-radius: 10px;
+background-color: rgb(223, 220, 245);
+display: flex;
+justify-content: center;
+align-items: center;
+border: none;
+cursor: pointer;
+z-index:400;
+}
+
+.swipe-left {
+margin-left:90%;
+}
+
+.arrow {
+width: 10px;
+height: 10px;
+border-top: 4px solid rgb(68, 49, 215);
+border-left: 4px solid rgb(68, 49, 215);
+transform: rotate(-45deg);
+position: relative;
+left: 1px;
+}
+
+.swipe-left .arrow {
+left: -1px;
+transform: rotate(135deg);
+}
+
+
+.teachers{
+  margin-top: 50px;
+  color: aliceblue;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
